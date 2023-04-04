@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>App de enlaces</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+      .icono {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        background-color: #007bff;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="icono" id="google">
+      <i class="fab fa-google"></i>
+    </div>
+    <div class="icono" id="youtube">
+      <i class="fab fa-youtube"></i>
+    </div>
+    <div class="icono" id="gmail">
+      <i class="fas fa-envelope"></i>
+    </div>
+    
+    <script>
+      const googleIcon = document.getElementById("google");
+      googleIcon.addEventListener("click", () => {
+        window.open("https://www.google.cl", "_self");
+      });
+      
+      const youtubeIcon = document.getElementById("youtube");
+      youtubeIcon.addEventListener("click", () => {
+        window.open("https://www.youtube.com", "_self");
+      });
+      
+      const gmailIcon = document.getElementById("gmail");
+      gmailIcon.addEventListener("click", () => {
+        window.open("https://www.gmail.com", "_self");
+      });
+    </script>
+  </body>
+</html>
